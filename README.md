@@ -1,1 +1,1 @@
-# -storeTechnology
+# storeTechnology
