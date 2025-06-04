@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style1.css" />
+    <link rel="stylesheet" href="../css/reset1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Mi Formulario</title>
+  </head>
+  <body>
+    <header>
+      <header class="header">
+        <div class="header__logo">
+          <img class="header__img" src="../img/logo.jpg">
+          <h1 class="header__title">SERVIPC</h1>
+        </div>
+        <i id="btn-menu" class="fa-solid fa-bars"></i>
+      
+      </header>
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item"><a href="../index.html">INICIO</a><i id="btn-close" class="fa-solid fa-xmark"></i></li>
+          <li class="nav__item"><a href="soporte.html">SOPORTE</a></li>
+          <li class="nav__item"><a href="tv.html">TV</a></li>
+          <li class="nav__item"><a href="moviles.html">MÓVILES</a></li>
+          <li class="nav__item"><a href="juegos.html">JUEGOS</a></li>
+          <li class="nav__item"><a href="componentes.html">COMPONENTES</a></li>
+          <li class="nav__item"><a href="periférico.html">PERIFERICOS</a></li>
+          <li class="nav__item"><a href="ofertas.html">OFERTAS</a></li>
+        </ul>
+    </header>
+    <div class="form">
+      <div class="content-item">
+        <h1>CONTACTENOS</h1>
+        <div class="form__item">
+          <h2>NOMBRE</h2>
+          <input type="text" placeholder="Ingreses sus nombres" />
+        </div>
+        <div class="form__item">
+          <h2>APELLIDOS</h2>
+          <input type="text" placeholder="Ingrese sus apellidos" />
+        </div>
+        <div class="form__item">
+          <h2>NÚMERO</h2>
+          <input
+            type="text"
+            pattern="\d*"
+            maxlength="9"
+            placeholder="Ingrese su número"
+          />
+        </div>
+        <div class="form__item">
+          <h2>DIRECCIÓN</h2>
+          <input type="text" placeholder="Ingrese su dirección" />
+        </div>
+        <div class="form__item">
+          <h2>FECHA</h2>
+          <input type="date" />
+        </div>
+        <h2>COMENTARIO</h2>
+        <textarea class="form__comentario" cols="30" rows="5"></textarea>
+      </div>
+
+      <h2 class="form__thank" hidden>
+        <i class="fa-solid fa-circle-check"></i> Hemos Recivido tu respuesta
+      </h2>
+      <button id="btn-submit" class="form__submit">Enviar</button>
+    </div>
+    <footer>
+      <footer class="footer">
+        <ul class="footer__menu">
+            <li class="footer__item"><a href="../pages/formulario.html">Contactos</a></li>
+            <li class="footer__item"><a href="#">Redes</a></li>
+            <li class="footer__item"><a href="#">Locales</a></li>
+            <li class="footer__item"><a href="#">Garantias</a></li>
+            <li class="footer__item"><a href="#">Correos</a></li>
+            <li class="footer__item"><a href="#">Preguntas Frecuentes</a></li>
+        </ul>
+    </footer>
+    </footer>
+
+    <script src="../js/script1.js"></script>
+  </body>
+</html>

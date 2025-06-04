@@ -1,0 +1,70 @@
+
+.contenedor{
+    background-color: #fff;
+    width: 80%;
+    /* border: 2px solid #000; */
+    margin:auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+.contenedor p{
+    text-align: center;
+}
+.contenedor2{
+    border-radius: .2rem;
+    background-color: #fff;
+    width: 100%;
+    border: 2px solid #000;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    
+    background: rgb(0, 35, 100);
+    
+}
+
+.contenedor2 img{
+    
+    width: 100%;
+}
+.cajitas{
+    width: 250px;
+    height: 200px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr 1fr));
+}
+.cajita2{
+    width: 100%;
+    height: 200px;
+    
+ 
+}
+
+.cajita3{
+    width: 257px;
+    height: px;
+}
+
+@import url('https://fonts.googleapis.com/css2? family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    color: #fff;
+}
+
+
+h4{
+    padding-top: 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+h2{
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(0, 35, 100);}
