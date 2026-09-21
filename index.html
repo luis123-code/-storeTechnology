@@ -1,159 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/slider.css" />
-    <link rel="stylesheet" href="css/juegos.css" />
-    <link rel="icon" href="img/logo (4).ico">
-    <title>Website</title>
-  </head>
-  <body>
-    <!---------------->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="icon" href="img/logo (4).ico">
+  <title>SERVIPC - Tecnología Premium</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__img" src="img/logo.jpg" alt="SERVIPC Logo" />
+      <h1 class="header__title">SERVIPC</h1>
+    </div>
+    <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+  </header>
 
-    <header class="header">
-      <div class="header__logo">
-        <img class="header__img" src="img/logo.jpg" />
-        <h1 class="header__title">SERVIPC</h1>
-      </div>
-      <i id="btn-menu" class="fa-solid fa-bars"></i>
-    </header>
-    <nav class="nav">
-      <ul class="nav__menu">
-        <li class="nav__item">
-          <a href="index.html">INICIO</a
-          ><i id="btn-close" class="fa-solid fa-xmark"></i>
-        </li>
-        <li class="nav__item"><a href="pages/soporte.html">SOPORTE</a></li>
-        <li class="nav__item"><a href="pages/tv.html">TV</a></li>
-        <li class="nav__item"><a href="pages/moviles.html">MÓVILES</a></li>
-        <li class="nav__item"><a href="pages/juegos.html">JUEGOS</a></li>
-        <li class="nav__item">
-          <a href="pages/componentes.html">COMPONENTES</a>
-        </li>
-        <li class="nav__item">
-          <a href="pages/periférico.html">PERIFERICOS</a>
-        </li>
-        <li class="nav__item"><a href="pages/ofertas.html">OFERTAS</a></li>
-      </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav class="nav">
+    <ul class="nav__menu">
+      <li class="nav__item"><a href="index.html" class="active">INICIO</a><i id="btn-close" class="fa-solid fa-xmark"></i></li>
+      <li class="nav__item"><a href="pages/como-funciona.html">CÓMO FUNCIONA</a></li>
+      <li class="nav__item"><a href="pages/moviles.html">MÓVILES</a></li>
+      <li class="nav__item"><a href="pages/tv.html">TV</a></li>
+      <li class="nav__item"><a href="pages/juegos.html">JUEGOS</a></li>
+      <li class="nav__item"><a href="pages/componentes.html">COMPONENTES</a></li>
+      <li class="nav__item"><a href="pages/periférico.html">PERIFÉRICOS</a></li>
+      <li class="nav__item"><a href="pages/ofertas.html">OFERTAS</a></li>
+      <li class="nav__item"><a href="pages/soporte.html">SOPORTE</a></li>
+    </ul>
+  </nav>
 
-    <section class="slider">
-      <input type="radio" name="image-slider" id="sld-1" hidden />
-      <input type="radio" name="image-slider" id="sld-2" hidden />
-      <input type="radio" name="image-slider" id="sld-3" hidden />
-      <input type="radio" name="image-slider" id="sld-4" hidden />
-      <ul class="menu">
-        <li><img class="slider-item" src="img/slider/slider.jpg" /></li>
-        <li><img class="slider-item" src="img/slider/slider2.jpg" /></li>
-        <li><img class="slider-item" src="img/slider/slider3.jpg" /></li>
-        <li><img class="slider-item" src="img/slider/slider4.jpg" /></li>
-      </ul>
-      <div class="pagination-slider">
-        <label class="pagination-slider__item" for="sld-1">
-          <img class="slider-img" src="img/slider/slider.jpg" />
-        </label>
-        <label class="pagination-slider__item" for="sld-2">
-          <img class="slider-img" src="img/slider/slider2.jpg" />
-        </label>
-        <label class="pagination-slider__item" for="sld-3">
-          <img class="slider-img" src="img/slider/slider3.jpg" />
-        </label>
-        <label class="pagination-slider__item" for="sld-4">
-          <img class="slider-img" src="img/slider/slider4.jpg" />
-        </label>
-      </div>
-    </section>
+  <!-- Hero Section con Carrusel Integrado -->
+  <section class="hero-slider">
+    <div class="hero-slider__content">
+      <h1 class="hero-slider__title">Tecnología que Transforma tu Vida</h1>
+      <p class="hero-slider__subtitle">Descubre los mejores productos tecnológicos con precios exclusivos y garantía premium</p>
+      <a href="#productos" class="hero-slider__cta">
+        <i class="fa-solid fa-shopping-bag"></i>
+        Explorar Productos
+      </a>
+    </div>
+    
+    <input type="radio" name="image-slider" id="sld-1" hidden />
+    <input type="radio" name="image-slider" id="sld-2" hidden />
+    <input type="radio" name="image-slider" id="sld-3" hidden />
+    <input type="radio" name="image-slider" id="sld-4" hidden />
+    <ul class="slider-menu">
+      <li><img class="slider-item" src="img/slider/slider.jpg" /></li>
+      <li><img class="slider-item" src="img/slider/slider2.jpg" /></li>
+      <li><img class="slider-item" src="img/slider/slider3.jpg" /></li>
+      <li><img class="slider-item" src="img/slider/slider4.jpg" /></li>
+    </ul>
+    <div class="pagination-slider">
+      <label class="pagination-slider__item" for="sld-1">
+        <img class="slider-img" src="img/slider/slider.jpg" />
+      </label>
+      <label class="pagination-slider__item" for="sld-2">
+        <img class="slider-img" src="img/slider/slider2.jpg" />
+      </label>
+      <label class="pagination-slider__item" for="sld-3">
+        <img class="slider-img" src="img/slider/slider3.jpg" />
+      </label>
+      <label class="pagination-slider__item" for="sld-4">
+        <img class="slider-img" src="img/slider/slider4.jpg" />
+      </label>
+    </div>
+  </section>
 
+  <!-- Productos Destacados -->
+  <section class="products" id="productos">
+    <h2 class="products__title">Productos Destacados</h2>
     <div class="container">
-      <div class="card">
-        <img src="./img/juegos/iphone.jpg" />
-        <h4>Iphone 13 pro max</h4>
-        <p>S/5999.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="iphone-13">
+        <img class="card__image" src="./img/juegos/iphone.jpg" alt="iPhone 13 Pro Max" />
+        <div class="card__content">
+          <h3 class="card__title">iPhone 13 Pro Max</h3>
+          <p class="card__price">S/5,999.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="./img/juegos/Motorola.jpg" />
-        <h4>Motorola G200</h4>
-        <p>S/4999.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="motorola-g200">
+        <img class="card__image" src="./img/juegos/Motorola.jpg" alt="Motorola G200" />
+        <div class="card__content">
+          <h3 class="card__title">Motorola G200</h3>
+          <p class="card__price">S/4,999.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="./img/juegos/sansun.jpg" />
-        <h4>Samsung S22</h4>
-        <p>S/4999.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="samsung-s22">
+        <img class="card__image" src="./img/juegos/sansun.jpg" alt="Samsung S22" />
+        <div class="card__content">
+          <h3 class="card__title">Samsung S22</h3>
+          <p class="card__price">S/4,999.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="./img/juegos/Samsung Galaxy Z Fold3.jpg" />
-        <h4>Samsung Galaxy Z Fold3</h4>
-        <p>S/5999.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="samsung-fold3">
+        <img class="card__image" src="./img/juegos/Samsung Galaxy Z Fold3.jpg" alt="Samsung Galaxy Z Fold3" />
+        <div class="card__content">
+          <h3 class="card__title">Samsung Galaxy Z Fold3</h3>
+          <p class="card__price">S/5,999.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="./img/juegos/Huawei Mate 40 Pro.jpg" />
-        <h4>Huawei Mate 40 Pro</h4>
-        <p>S/4999.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="huawei-mate40">
+        <img class="card__image" src="./img/juegos/Huawei Mate 40 Pro.jpg" alt="Huawei Mate 40 Pro" />
+        <div class="card__content">
+          <h3 class="card__title">Huawei Mate 40 Pro</h3>
+          <p class="card__price">S/4,999.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="./img/juegos/Huawei P50 Pro.jpg" />
-        <h4>Huawei P50 Pro</h4>
-        <p>S/6999.99</p>
-        <a href="#">Ver más</a>
-      </div>
-
-      <div class="card">
-        <img src="./img/juegos/OPPO Find X3 Pro.jpg" />
-        <h4>OPPO Find X3 Pro</h4>
-        <p>S/4999.99</p>
-        <a href="#">Ver más</a>
-      </div>
-
-      <div class="card">
-        <img src="./img/juegos/Xiaomi 12.jpg" />
-        <h4>Xiaomi 12</h4>
-        <p>S/4999.99</p>
-        <a href="#">Ver más</a>
-      </div>
-
-      <div class="card">
-        <img src="./img/juegos/OnePlus 10 Pro.jpg" />
-        <h4>OnePlus 10 Pro</h4>
-        <p>S/7999.99</p>
-        <a href="#">Ver más</a>
-      </div>
-
-      <div class="card">
-        <img src="./img/juegos/Huawei Mate X2.jpg" />
-        <h4>Huawei Mate X2</h4>
-        <p>S/7999.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="huawei-p50">
+        <img class="card__image" src="./img/juegos/Huawei P50 Pro.jpg" alt="Huawei P50 Pro" />
+        <div class="card__content">
+          <h3 class="card__title">Huawei P50 Pro</h3>
+          <p class="card__price">S/6,999.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
     </div>
+  </section>
 
-    <footer class="footer">
-      <ul class="footer__menu">
-        <li class="footer__item">
-          <a href="pages/formulario.html">Contactos</a>
-        </li>
-        <li class="footer__item"><a href="#">Redes</a></li>
-        <li class="footer__item"><a href="#">Locales</a></li>
-        <li class="footer__item"><a href="#">Garantias</a></li>
-        <li class="footer__item"><a href="#">Correos</a></li>
-        <li class="footer__item"><a href="#">Preguntas Frecuentes</a></li>
-      </ul>
-    </footer>
-    <!-- SCRIPTS JS -->
+  <!-- Footer -->
+  <footer class="footer">
+    <ul class="footer__menu">
+      <li class="footer__item"><a href="pages/formulario.html">Contactos</a></li>
+      <li class="footer__item"><a href="#">Redes Sociales</a></li>
+      <li class="footer__item"><a href="#">Nuestros Locales</a></li>
+      <li class="footer__item"><a href="#">Garantías</a></li>
+      <li class="footer__item"><a href="#">Preguntas Frecuentes</a></li>
+    </ul>
+  </footer>
 
-    <script src="js/script.js"></script>
-  </body>
+  <!-- Modal de Producto -->
+  <div id="product-modal" class="product-modal">
+    <div class="modal-content">
+      <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <div class="main-image">
+            <img id="modal-main-image" src="" alt="" />
+          </div>
+          <div class="thumbnail-list">
+            <div class="thumbnail active"><img src="" alt="" /></div>
+            <div class="thumbnail"><img src="" alt="" /></div>
+            <div class="thumbnail"><img src="" alt="" /></div>
+          </div>
+        </div>
+        <div class="modal-info">
+          <h2 id="modal-title" class="modal-title"></h2>
+          <p id="modal-price" class="modal-price"></p>
+          <div class="modal-description">
+            <h3>Descripción</h3>
+            <p id="modal-description-text"></p>
+          </div>
+          <div class="modal-specs">
+            <h3>Especificaciones</h3>
+            <ul id="modal-specs-list"></ul>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-add-cart">
+              <i class="fa-solid fa-cart-plus"></i>
+              Agregar al Carrito
+            </button>
+            <button class="btn-buy-now">
+              <i class="fa-solid fa-bolt"></i>
+              Comprar Ahora
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
 </html>

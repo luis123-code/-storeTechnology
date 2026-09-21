@@ -1,227 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Componentes</title>
-    <link rel="stylesheet" href="estilo.css" />
-    <link rel="stylesheet" href="/img/logo (4).ico">
-    <script
-      src="https://kit.fontawesome.com/7b9ca42581.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../css/tv_comp.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/reset.css" />
-  </head>
-  <body>
-    <!-- <div class="contenedor"> -->
-    <header class="header">
-      <div class="header__logo">
-        <img class="header__img" src="../img/logo.jpg" />
-        <h1 class="header__title">SERVIPC</h1>
-      </div>
-      <i id="btn-menu" class="fa-solid fa-bars"></i>
-    </header>
-    <nav class="nav">
-      <ul class="nav__menu">
-        <li class="nav__item">
-          <a href="../index.html">INICIO</a
-          ><i id="btn-close" class="fa-solid fa-xmark"></i>
-        </li>
-        <li class="nav__item"><a href="soporte.html">SOPORTE</a></li>
-        <li class="nav__item"><a href="tv.html">TV</a></li>
-        <li class="nav__item"><a href="moviles.html">MÓVILES</a></li>
-        <li class="nav__item"><a href="juegos.html">JUEGOS</a></li>
-        <li class="nav__item"><a href="componentes.html">COMPONENTES</a></li>
-        <li class="nav__item"><a href="periférico.html">PERIFERICOS</a></li>
-        <li class="nav__item"><a href="ofertas.html">OFERTAS</a></li>
-      </ul>
-    </nav>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/slider.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="icon" href="../img/logo (4).ico">
+  <title>Componentes - SERVIPC</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__img" src="../img/logo.jpg" alt="SERVIPC Logo" />
+      <h1 class="header__title">SERVIPC</h1>
+    </div>
+    <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+  </header>
 
-    <main>
-      <section>
-        <div class="contendor-productos">
-          <h2>Productos destacados</h2>
-          <h3 class="sub-title">
-            <img
-              src="../img/tv_comp/productos/procesador/procesador.jpg"
-              alt="img"
-            />Procesador
-          </h3>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/procesador/pro 2.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>
-              CPU AMD RYZEN 5 4600G 6N 12 TH AM4 3.7GHZ 11MB TDP S/.559.70
-            </h5>
+  <!-- Navigation -->
+  <nav class="nav">
+    <ul class="nav__menu">
+      <li class="nav__item"><a href="../index.html">INICIO</a><i id="btn-close" class="fa-solid fa-xmark"></i></li>
+      <li class="nav__item"><a href="como-funciona.html">CÓMO FUNCIONA</a></li>
+      <li class="nav__item"><a href="moviles.html">MÓVILES</a></li>
+      <li class="nav__item"><a href="tv.html">TV</a></li>
+      <li class="nav__item"><a href="juegos.html">JUEGOS</a></li>
+      <li class="nav__item"><a href="componentes.html" class="active">COMPONENTES</a></li>
+      <li class="nav__item"><a href="periférico.html">PERIFÉRICOS</a></li>
+      <li class="nav__item"><a href="ofertas.html">OFERTAS</a></li>
+      <li class="nav__item"><a href="soporte.html">SOPORTE</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="hero" style="min-height: 50vh; padding: 6rem 2rem 4rem;">
+    <div class="hero__content">
+      <h1 class="hero__title">Componentes PC</h1>
+      <p class="hero__subtitle">Los mejores componentes para armar tu computadora de alto rendimiento</p>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="products">
+    <div class="container">
+      <div class="card" data-product="ryzen-4600g">
+        <img class="card__image" src="../img/tv_comp/productos/procesador/pro 2.jpg" alt="AMD Ryzen 5 4600G" />
+        <div class="card__content">
+          <h3 class="card__title">CPU AMD RYZEN 5 4600G 6N 12 TH AM4 3.7GHZ 11MB</h3>
+          <p class="card__price">S/559.70</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="ryzen-5700x">
+        <img class="card__image" src="../img/tv_comp/productos/procesador/pro3.jpg" alt="AMD Ryzen 7 5700X" />
+        <div class="card__content">
+          <h3 class="card__title">CPU AMD RYZEN 7 5700X 8N / 16TH 3.4GHZ 32MB AM4</h3>
+          <p class="card__price">S/1,177.30</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="ryzen-2700x">
+        <img class="card__image" src="../img/tv_comp/productos/procesador/pro4.jpg" alt="AMD Ryzen 7 2700X" />
+        <div class="card__content">
+          <h3 class="card__title">CPU AMD RYZEN 7 2700X 50 GOLD EDITION 3.70GHZ 16MB</h3>
+          <p class="card__price">S/1,273.80</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="fuente-500w">
+        <img class="card__image" src="../img/tv_comp/productos/fuente de poder/f1.jpg" alt="Fuente 500W" />
+        <div class="card__content">
+          <h3 class="card__title">FUENTE 500W RAIDMAX VORTEX POWER RX-500AF-V</h3>
+          <p class="card__price">S/131.24</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="fuente-850w">
+        <img class="card__image" src="../img/tv_comp/productos/fuente de poder/f2.jpg" alt="Fuente 850W" />
+        <div class="card__content">
+          <h3 class="card__title">FUENTE 850W BITFENIX 80 PLUS GOLD BP-WG850UMAG</h3>
+          <p class="card__price">S/416.88</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="fuente-750w">
+        <img class="card__image" src="../img/tv_comp/productos/fuente de poder/f3.jpg" alt="Fuente 750W" />
+        <div class="card__content">
+          <h3 class="card__title">FUENTE 750W BITFENIX 80 PLUS GOLD BP-FM750ULAG</h3>
+          <p class="card__price">S/328.10</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="asus-rog">
+        <img class="card__image" src="../img/tv_comp/productos/placa madre/l1.jpg" alt="ASUS ROG" />
+        <div class="card__content">
+          <h3 class="card__title">PLACA ASUS ROG CROSSHAIR VIII HERO WI-FI AMD X570</h3>
+          <p class="card__price">S/1,883.60</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="asus-proart">
+        <img class="card__image" src="../img/tv_comp/productos/placa madre/l2.jpg" alt="ASUS ProArt" />
+        <div class="card__content">
+          <h3 class="card__title">PLACA ASUS PROART X570-CREATOR WIFI AMD X570</h3>
+          <p class="card__price">S/1,833.50</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="asus-tuf">
+        <img class="card__image" src="../img/tv_comp/productos/placa madre/l3.jpg" alt="ASUS TUF" />
+        <div class="card__content">
+          <h3 class="card__title">PLACA ASUS TUF GAMING B450M-PLUS II AM4 AMD</h3>
+          <p class="card__price">S/424.60</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="ssd-512">
+        <img class="card__image" src="../img/tv_comp/productos/m.almacenamiento/q2.jpg" alt="SSD 512GB" />
+        <div class="card__content">
+          <h3 class="card__title">DISCO SOLIDO SSD 512GB TEAM GROUP CX2 2.5 SATA</h3>
+          <p class="card__price">S/185.28</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="ssd-1tb-tforce">
+        <img class="card__image" src="../img/tv_comp/productos/m.almacenamiento/q3.jpg" alt="SSD 1TB T-Force" />
+        <div class="card__content">
+          <h3 class="card__title">DISCO SOLIDOS SSD 1TB TEAM GROUP T-FORCE</h3>
+          <p class="card__price">S/482.50</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="ssd-1tb-team">
+        <img class="card__image" src="../img/tv_comp/productos/m.almacenamiento/q4.jpg" alt="SSD 1TB Team" />
+        <div class="card__content">
+          <h3 class="card__title">DISCO SOLIDOS SSD 1TB TEAM GROUP T-FORCE</h3>
+          <p class="card__price">S/200.72</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="rx-6500">
+        <img class="card__image" src="../img/tv_comp/productos/tarjeta de video/t2.jpg" alt="RX 6500 XT" />
+        <div class="card__content">
+          <h3 class="card__title">VIDEO SAPPHIRE PULSE RADEON RX 6500 XT OC 4GB</h3>
+          <p class="card__price">S/1,061.50</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="rx-6800">
+        <img class="card__image" src="../img/tv_comp/productos/tarjeta de video/t3.jpg" alt="RX 6800 XT" />
+        <div class="card__content">
+          <h3 class="card__title">VIDEO ASUS TUF GAMING RADEON RX 6800 XT 16GB</h3>
+          <p class="card__price">S/5,481.20</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+
+      <div class="card" data-product="rx-560">
+        <img class="card__image" src="../img/tv_comp/productos/tarjeta de video/t4.jpg" alt="RX 560" />
+        <div class="card__content">
+          <h3 class="card__title">VIDEO BIOSTAR RADEON RX560 4GB DDR5 128BIT</h3>
+          <p class="card__price">S/810.60</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ul class="footer__menu">
+      <li class="footer__item"><a href="formulario.html">Contactos</a></li>
+      <li class="footer__item"><a href="#">Redes Sociales</a></li>
+      <li class="footer__item"><a href="#">Nuestros Locales</a></li>
+      <li class="footer__item"><a href="#">Garantías</a></li>
+      <li class="footer__item"><a href="#">Preguntas Frecuentes</a></li>
+    </ul>
+  </footer>
+
+  <!-- Modal de Producto -->
+  <div id="product-modal" class="product-modal">
+    <div class="modal-content">
+      <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <div class="main-image">
+            <img id="modal-main-image" src="" alt="" />
           </div>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/procesador/pro3.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>
-              CPU AMD RYZEN 7 5700X 8N / 16TH 3.4GHZ 32MB AM4 TDP / S/. 1177.30
-            </h5>
-          </div>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/procesador/pro4.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>
-              CPU AMD RYZEN 7 2700X 50 GOLD EDITION 3.70GHZ 16MB // S/. 1273.80
-            </h5>
-          </div>
-          <h3>
-            <img
-              src="../img/tv_comp/productos/fuente de poder/fuente de poder.jpg"
-              alt="img"
-            />
-            Fuente de poder
-          </h3>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/fuente de poder/f1.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>FUENTE 500W RAIDMAX VORTEX POWER RX-500AF-V S/.131.24</h5>
-          </div>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/fuente de poder/f2.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>FUENTE 850W BITFENIX 80 PLUS GOLD BP-WG850UMAG- S/.416.88</h5>
-          </div>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/fuente de poder/f3.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>FUENTE 750W BITFENIX 80 PLUS GOLD BP-FM750ULAG S/.328.10</h5>
-          </div>
-          <h3>
-            <img
-              src="../img/tv_comp/productos/placa madre/placa madre - copia.jpg"
-              alt="img"
-            />Placa madre
-          </h3>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/placa madre/l1.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>
-              PLACA ASUS ROG CROSSHAIR VIII HERO WI-FI AMD X570 // S/. 1883.6
-            </h5>
-          </div>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/placa madre/l2.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>PLACA ASUS PROART X570-CREATOR WIFI AMD X570 S/.1833.50</h5>
-          </div>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/placa madre/l3.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>PLACA ASUS TUF GAMING B450M-PLUS II AM4 AMD GO S/. 424.60</h5>
-          </div>
-          <h3>
-            <img
-              src="../img/tv_comp/productos/m.almacenamiento/q1.jpg"
-              alt="img"
-            />Memoria de almacenamiento
-          </h3>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/m.almacenamiento/q2.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>DISCO SOLIDO SSD 512GB TEAM GROUP CX2 2.5 SATA S/.185.28</h5>
-          </div>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/m.almacenamiento/q3.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>DISCO SOLIDOS SSD 1TB TEAM GROUP T-FORCE S/.482.50</h5>
-          </div>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/m.almacenamiento/q4.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>DISCO SOLIDOS SSD 1TB TEAM GROUP T-FORCE S/.200.72</h5>
-          </div>
-          <h3>
-            <img
-              src="../img/tv_comp/productos/tarjeta de video/tarjeta de video.jpg"
-              alt="img"
-            />Tarjeta de video
-          </h3>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/tarjeta de video/t2.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>VIDEO SAPPHIRE PULSE RADEON RX 6500 XT OC 4GB S/.1061.50</h5>
-          </div>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/tarjeta de video/t3.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>
-              VIDEO ASUS TUF GAMING RADEON RX 6800 XT 16GB //// S/. 5481.20
-            </h5>
-          </div>
-          <div class="caja1">
-            <img
-              src="../img/tv_comp/productos/tarjeta de video/t4.jpg"
-              id="luis"
-              alt="img"
-            />
-            <h5>VIDEO BIOSTAR RADEON RX560 4GB DDR5 128BIT //// S/. 810.60</h5>
+          <div class="thumbnail-list">
+            <div class="thumbnail active"><img src="" alt="" /></div>
+            <div class="thumbnail"><img src="" alt="" /></div>
+            <div class="thumbnail"><img src="" alt="" /></div>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="modal-info">
+          <h2 id="modal-title" class="modal-title"></h2>
+          <p id="modal-price" class="modal-price"></p>
+          <div class="modal-description">
+            <h3>Descripción</h3>
+            <p id="modal-description-text"></p>
+          </div>
+          <div class="modal-specs">
+            <h3>Especificaciones</h3>
+            <ul id="modal-specs-list"></ul>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-add-cart">
+              <i class="fa-solid fa-cart-plus"></i>
+              Agregar al Carrito
+            </button>
+            <button class="btn-buy-now">
+              <i class="fa-solid fa-bolt"></i>
+              Comprar Ahora
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <footer class="footer">
-      <ul class="footer__menu">
-        <li class="footer__item">
-          <a href="../pages/formulario.html">Contactos</a>
-        </li>
-        <li class="footer__item"><a href="#">Redes</a></li>
-        <li class="footer__item"><a href="#">Locales</a></li>
-        <li class="footer__item"><a href="#">Garantias</a></li>
-        <li class="footer__item"><a href="#">Correos</a></li>
-        <li class="footer__item"><a href="#">Preguntas Frecuentes</a></li>
-      </ul>
-    </footer>
-
-    <script src="../js/script.js"></script>
-  </body>
+  <script src="../js/script.js"></script>
+</body>
 </html>

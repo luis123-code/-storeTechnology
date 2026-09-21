@@ -1,129 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Juegos</title>
-    <link rel="stylesheet" href="../css/juegos.css" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/reset.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__logo">
-        <img class="header__img" src="../img/logo.jpg" />
-        <h1 class="header__title">SERVIPC</h1>
-      </div>
-      <i id="btn-menu" class="fa-solid fa-bars"></i>
-    </header>
-    <nav class="nav">
-      <ul class="nav__menu">
-        <li class="nav__item">
-          <a href="../index.html">INICIO</a
-          ><i id="btn-close" class="fa-solid fa-xmark"></i>
-        </li>
-        <li class="nav__item"><a href="soporte.html">SOPORTE</a></li>
-        <li class="nav__item"><a href="tv.html">TV</a></li>
-        <li class="nav__item"><a href="moviles.html">MÓVILES</a></li>
-        <li class="nav__item"><a href="juegos.html">JUEGOS</a></li>
-        <li class="nav__item"><a href="componentes.html">COMPONENTES</a></li>
-        <li class="nav__item"><a href="periférico.html">PERIFERICOS</a></li>
-        <li class="nav__item"><a href="ofertas.html">OFERTAS</a></li>
-      </ul>
-    </nav>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/slider.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="icon" href="../img/logo (4).ico">
+  <title>Juegos - SERVIPC</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__img" src="../img/logo.jpg" alt="SERVIPC Logo" />
+      <h1 class="header__title">SERVIPC</h1>
+    </div>
+    <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+  </header>
 
-    <h1 class="title">¡Artículos en Venta!</h1>
+  <!-- Navigation -->
+  <nav class="nav">
+    <ul class="nav__menu">
+      <li class="nav__item"><a href="../index.html">INICIO</a><i id="btn-close" class="fa-solid fa-xmark"></i></li>
+      <li class="nav__item"><a href="como-funciona.html">CÓMO FUNCIONA</a></li>
+      <li class="nav__item"><a href="moviles.html">MÓVILES</a></li>
+      <li class="nav__item"><a href="tv.html">TV</a></li>
+      <li class="nav__item"><a href="juegos.html" class="active">JUEGOS</a></li>
+      <li class="nav__item"><a href="componentes.html">COMPONENTES</a></li>
+      <li class="nav__item"><a href="periférico.html">PERIFÉRICOS</a></li>
+      <li class="nav__item"><a href="ofertas.html">OFERTAS</a></li>
+      <li class="nav__item"><a href="soporte.html">SOPORTE</a></li>
+    </ul>
+  </nav>
 
+  <!-- Page Header -->
+  <section class="hero" style="min-height: 50vh; padding: 6rem 2rem 4rem;">
+    <div class="hero__content">
+      <h1 class="hero__title">Videojuegos Premium</h1>
+      <p class="hero__subtitle">Los mejores títulos de gaming para todas las plataformas</p>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="products">
     <div class="container">
-      <div class="card">
-        <img
-          src="../img/juegos/Grand Theft Auto V Premium Online Edition.jpg"
-        />
-        <h4>Grand Theft Auto V</h4>
-        <p>S/49.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="gta-v">
+        <img class="card__image" src="../img/juegos/Grand Theft Auto V Premium Online Edition.jpg" alt="Grand Theft Auto V" />
+        <div class="card__content">
+          <h3 class="card__title">Grand Theft Auto V Premium Online Edition</h3>
+          <p class="card__price">S/49.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="../img/juegos/Minecraft Java Edition.jpg" />
-        <h4>Minecraft: Java Edition</h4>
-        <p>S/59.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="minecraft">
+        <img class="card__image" src="../img/juegos/Minecraft Java Edition.jpg" alt="Minecraft Java Edition" />
+        <div class="card__content">
+          <h3 class="card__title">Minecraft: Java Edition</h3>
+          <p class="card__price">S/59.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="../img/juegos/Dragon Ball Z Kakarot.jpg" />
-        <h4>Dragon Ball Z: Kakarot</h4>
-        <p>S/99.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="dbz-kakarot">
+        <img class="card__image" src="../img/juegos/Dragon Ball Z Kakarot.jpg" alt="Dragon Ball Z: Kakarot" />
+        <div class="card__content">
+          <h3 class="card__title">Dragon Ball Z: Kakarot</h3>
+          <p class="card__price">S/99.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="../img/juegos/Fortnite.jpg" />
-        <h4>Fortnite</h4>
-        <p>Free</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="fortnite">
+        <img class="card__image" src="../img/juegos/Fortnite.jpg" alt="Fortnite" />
+        <div class="card__content">
+          <h3 class="card__title">Fortnite</h3>
+          <p class="card__price">Free</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="../img/juegos/Dragon Ball FighterZ.jpg" />
-        <h4>Dragon Ball FighterZ</h4>
-        <p>S/79.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="dbz-fighterz">
+        <img class="card__image" src="../img/juegos/Dragon Ball FighterZ.jpg" alt="Dragon Ball FighterZ" />
+        <div class="card__content">
+          <h3 class="card__title">Dragon Ball FighterZ</h3>
+          <p class="card__price">S/79.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="../img/juegos/Devil May Cry 5.jpg" />
-        <h4>Devil May Cry 5</h4>
-        <p>S/79.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="dmc5">
+        <img class="card__image" src="../img/juegos/Devil May Cry 5.jpg" alt="Devil May Cry 5" />
+        <div class="card__content">
+          <h3 class="card__title">Devil May Cry 5</h3>
+          <p class="card__price">S/79.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="../img/juegos/FIFA 23.jpg" />
-        <h4>FIFA 23</h4>
-        <p>S/199.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="fifa-23">
+        <img class="card__image" src="../img/juegos/FIFA 23.jpg" alt="FIFA 23" />
+        <div class="card__content">
+          <h3 class="card__title">FIFA 23</h3>
+          <p class="card__price">S/199.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="../img/juegos/NBA 2K23.jpg" />
-        <h4>NBA 2K23</h4>
-        <p>S/199.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="nba-2k23">
+        <img class="card__image" src="../img/juegos/NBA 2K23.jpg" alt="NBA 2K23" />
+        <div class="card__content">
+          <h3 class="card__title">NBA 2K23</h3>
+          <p class="card__price">S/199.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="../img/juegos/God of War.jpg" />
-        <h4>God of War</h4>
-        <p>S/79.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="god-of-war">
+        <img class="card__image" src="../img/juegos/God of War.jpg" alt="God of War" />
+        <div class="card__content">
+          <h3 class="card__title">God of War</h3>
+          <p class="card__price">S/79.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="../img/juegos/Kingdom Come Deliverance.jpg" />
-        <h4>Kingdom Come: Deliverance</h4>
-        <p>S/199.99</p>
-        <a href="#">Ver más</a>
+      <div class="card" data-product="kingdom-come">
+        <img class="card__image" src="../img/juegos/Kingdom Come Deliverance.jpg" alt="Kingdom Come: Deliverance" />
+        <div class="card__content">
+          <h3 class="card__title">Kingdom Come: Deliverance</h3>
+          <p class="card__price">S/199.99</p>
+          <button class="card__button">Ver Detalles</button>
+        </div>
       </div>
     </div>
+  </section>
 
-    <footer class="footer">
-      <ul class="footer__menu">
-        <li class="footer__item">
-          <a href="../pages/formulario.html">Contactos</a>
-        </li>
-        <li class="footer__item"><a href="#">Redes</a></li>
-        <li class="footer__item"><a href="#">Locales</a></li>
-        <li class="footer__item"><a href="#">Garantias</a></li>
-        <li class="footer__item"><a href="#">Correos</a></li>
-        <li class="footer__item"><a href="#">Preguntas Frecuentes</a></li>
-      </ul>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <ul class="footer__menu">
+      <li class="footer__item"><a href="formulario.html">Contactos</a></li>
+      <li class="footer__item"><a href="#">Redes Sociales</a></li>
+      <li class="footer__item"><a href="#">Nuestros Locales</a></li>
+      <li class="footer__item"><a href="#">Garantías</a></li>
+      <li class="footer__item"><a href="#">Preguntas Frecuentes</a></li>
+    </ul>
+  </footer>
 
-    <script src="../js/script.js"></script>
-  </body>
+  <!-- Modal de Producto -->
+  <div id="product-modal" class="product-modal">
+    <div class="modal-content">
+      <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <div class="main-image">
+            <img id="modal-main-image" src="" alt="" />
+          </div>
+          <div class="thumbnail-list">
+            <div class="thumbnail active"><img src="" alt="" /></div>
+            <div class="thumbnail"><img src="" alt="" /></div>
+            <div class="thumbnail"><img src="" alt="" /></div>
+          </div>
+        </div>
+        <div class="modal-info">
+          <h2 id="modal-title" class="modal-title"></h2>
+          <p id="modal-price" class="modal-price"></p>
+          <div class="modal-description">
+            <h3>Descripción</h3>
+            <p id="modal-description-text"></p>
+          </div>
+          <div class="modal-specs">
+            <h3>Especificaciones</h3>
+            <ul id="modal-specs-list"></ul>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-add-cart">
+              <i class="fa-solid fa-cart-plus"></i>
+              Agregar al Carrito
+            </button>
+            <button class="btn-buy-now">
+              <i class="fa-solid fa-bolt"></i>
+              Comprar Ahora
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
 </html>

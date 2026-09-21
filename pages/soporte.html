@@ -1,79 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/reset.css" />
-  <link rel="stylesheet" href="../css/soporte.css" />
-  <title>Soporte</title>
-</head>
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="icon" href="../img/logo (4).ico">
+  <title>Soporte - SERVIPC</title>
+  <style>
+    .support-section {
+      padding: 6rem 2rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
+    .support-hero {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .support-hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .support-hero p {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .support-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .support-text {
+      background: var(--secondary);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+    }
+
+    .support-text h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+    }
+
+    .support-text p {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .support-text b {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .support-image {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .support-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .service-card {
+      background: var(--secondary);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent);
+    }
+
+    .service-icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .service-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .service-card p {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .contact-cta {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 3rem;
+      background: var(--gradient-1);
+      border-radius: 20px;
+    }
+
+    .contact-cta h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .contact-cta p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+    }
+
+    .contact-cta a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2.5rem;
+      background: white;
+      color: var(--accent);
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: var(--transition);
+    }
+
+    .contact-cta a:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    @media (max-width: 768px) {
+      .support-hero h1 {
+        font-size: 2rem;
+      }
+
+      .support-content {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-cta h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
 <body>
+  <!-- Header -->
   <header class="header">
     <div class="header__logo">
-      <img class="header__img" src="../img/logo.jpg" />
+      <img class="header__img" src="../img/logo.jpg" alt="SERVIPC Logo" />
       <h1 class="header__title">SERVIPC</h1>
     </div>
-    <i id="btn-menu" class="fa-solid fa-bars"></i>
+    <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
   </header>
+
+  <!-- Navigation -->
   <nav class="nav">
     <ul class="nav__menu">
-      <li class="nav__item">
-        <a href="../index.html">INICIO</a><i id="btn-close" class="fa-solid fa-xmark"></i>
-      </li>
-      <li class="nav__item"><a href="../pages/soporte.html">SOPORTE</a></li>
-      <li class="nav__item"><a href="tv.html">TV</a></li>
+      <li class="nav__item"><a href="../index.html">INICIO</a><i id="btn-close" class="fa-solid fa-xmark"></i></li>
+      <li class="nav__item"><a href="como-funciona.html">CÓMO FUNCIONA</a></li>
       <li class="nav__item"><a href="moviles.html">MÓVILES</a></li>
+      <li class="nav__item"><a href="tv.html">TV</a></li>
       <li class="nav__item"><a href="juegos.html">JUEGOS</a></li>
       <li class="nav__item"><a href="componentes.html">COMPONENTES</a></li>
-      <li class="nav__item"><a href="periférico.html">PERIFERICOS</a></li>
+      <li class="nav__item"><a href="periférico.html">PERIFÉRICOS</a></li>
       <li class="nav__item"><a href="ofertas.html">OFERTAS</a></li>
+      <li class="nav__item"><a href="soporte.html" class="active">SOPORTE</a></li>
     </ul>
   </nav>
 
-  <main class="main">
-    <h2 class="main__title">Soporte para tu <span class="typed"></span></h2>
-    <p class="main__description">
-      <b>SERVIPC</b> es una empresa peruana que cuenta con personal altamente
-      capacitado en la reparación de laptop y reparación de computadoras de
-      todas las marcas, dando servicio a la Ciudad de Lima y el área
-      metropolitana. Para <b>SERVIPC</b> el objetivo es garantizar la
-      satisfacción del cliente, sabedores de que hoy en día sus computadoras
-      son su herramienta principal de trabajo, deseamos que su desempeño no se
-      vea afectado con problemas en sus equipos. El servicio técnico de
-      computadoras de <b>SERVIPC</b> se caracteriza por abarcar cualquier tipo
-      de problemática que presenten sus equipos, trabajando de manera conjunta
-      y multidisciplinaria para lograr los mejores resultados. Además del
-      servicio de reparación, le brindaremos todo el asesoramiento
-      personalizado para luego diagnosticar de forma rápida y precisa las
-      causas del desperfecto, y trabajar de acuerdo a un presupuesto
-      inmejorable. Si tu computadora o laptop presenta problemas contáctanos,
-      nuestros técnicos están altamente capacitados para darle una solución.
-      Contamos con garantía en refacciones y reparaciones, agende su cita y un
-      especialista su pondrá en contacto.
-    </p>
+  <!-- Support Section -->
+  <section class="support-section">
+    <div class="support-hero">
+      <h1>Soporte Técnico Profesional</h1>
+      <p>Servicio especializado en reparación y mantenimiento de computadoras y laptops</p>
+    </div>
 
-    <img class="main__image" src="../img/soporte.jpg" />
-  </main>
+    <div class="support-content">
+      <div class="support-text">
+        <h2>Servicio Técnico Premium</h2>
+        <p>
+          <b>SERVIPC</b> es una empresa peruana que cuenta con personal altamente capacitado en la reparación de laptop y computadoras de todas las marcas, dando servicio a la Ciudad de Lima y el área metropolitana.
+        </p>
+        <p>
+          Para <b>SERVIPC</b> el objetivo es garantizar la satisfacción del cliente, sabedores de que hoy en día sus computadoras son su herramienta principal de trabajo, deseamos que su desempeño no se vea afectado con problemas en sus equipos.
+        </p>
+        <p>
+          El servicio técnico de computadoras de <b>SERVIPC</b> se caracteriza por abarcar cualquier tipo de problemática que presenten sus equipos, trabajando de manera conjunta y multidisciplinaria para lograr los mejores resultados.
+        </p>
+        <p>
+          Además del servicio de reparación, le brindaremos todo el asesoramiento personalizado para luego diagnosticar de forma rápida y precisa las causas del desperfecto, y trabajar de acuerdo a un presupuesto inmejorable.
+        </p>
+      </div>
+      <div class="support-image">
+        <img src="../img/soporte.jpg" alt="Soporte Técnico" />
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-laptop-medical"></i></div>
+        <h3>Reparación de Laptops</h3>
+        <p>Diagnóstico y reparación especializada en laptops de todas las marcas y modelos.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
+        <h3>Reparación de PCs</h3>
+        <p>Servicio completo para computadoras de escritorio, desde hardware hasta software.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-microchip"></i></div>
+        <h3>Actualización de Componentes</h3>
+        <p>Mejora de rendimiento con actualizaciones de RAM, almacenamiento y procesadores.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Garantía y Seguimiento</h3>
+        <p>Garantía en refacciones y reparaciones con seguimiento personalizado.</p>
+      </div>
+    </div>
+
+    <div class="contact-cta">
+      <h2>¿Necesitas Ayuda Técnica?</h2>
+      <p>Contáctanos hoy y un especialista se pondrá en contacto contigo para brindarte la mejor solución.</p>
+      <a href="formulario.html">
+        <i class="fa-solid fa-envelope"></i>
+        Contactar Soporte
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <ul class="footer__menu">
-      <li class="footer__item">
-        <a href="../pages/formulario.html">Contactos</a>
-      </li>
-      <li class="footer__item"><a href="#">Redes</a></li>
-      <li class="footer__item"><a href="#">Locales</a></li>
-      <li class="footer__item"><a href="#">Garantias</a></li>
-      <li class="footer__item"><a href="#">Correos</a></li>
+      <li class="footer__item"><a href="formulario.html">Contactos</a></li>
+      <li class="footer__item"><a href="#">Redes Sociales</a></li>
+      <li class="footer__item"><a href="#">Nuestros Locales</a></li>
+      <li class="footer__item"><a href="#">Garantías</a></li>
       <li class="footer__item"><a href="#">Preguntas Frecuentes</a></li>
     </ul>
   </footer>
 
-  <script src="../js/typed.js"></script>
-
-
+  <script src="../js/script.js"></script>
 </body>
-
 </html>

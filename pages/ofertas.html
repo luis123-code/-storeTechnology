@@ -1,259 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/ofertas.css" />
-    <title>Ofertas limitadas</title>
-  </head>
-  <body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/ofertas.css" />
+  <link rel="stylesheet" href="../css/slider.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="icon" href="../img/logo (4).ico">
+  <title>Ofertas - SERVIPC</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__img" src="../img/logo.jpg" alt="SERVIPC Logo" />
+      <h1 class="header__title">SERVIPC</h1>
+    </div>
+    <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+  </header>
 
-    <header class="header">
-      <div class="header__logo">
-        <img class="header__img" src="../img/logo.jpg">
-        <h1 class="header__title">SERVIPC</h1>
-      </div>
-      <i id="btn-menu" class="fa-solid fa-bars"></i>
+  <!-- Navigation -->
+  <nav class="nav">
+    <ul class="nav__menu">
+      <li class="nav__item"><a href="../index.html">INICIO</a><i id="btn-close" class="fa-solid fa-xmark"></i></li>
+      <li class="nav__item"><a href="como-funciona.html">CÓMO FUNCIONA</a></li>
+      <li class="nav__item"><a href="moviles.html">MÓVILES</a></li>
+      <li class="nav__item"><a href="tv.html">TV</a></li>
+      <li class="nav__item"><a href="juegos.html">JUEGOS</a></li>
+      <li class="nav__item"><a href="componentes.html">COMPONENTES</a></li>
+      <li class="nav__item"><a href="periférico.html">PERIFÉRICOS</a></li>
+      <li class="nav__item"><a href="ofertas.html" class="active">OFERTAS</a></li>
+      <li class="nav__item"><a href="soporte.html">SOPORTE</a></li>
+    </ul>
+  </nav>
+
+  <!-- Offers Hero -->
+  <section class="offers-hero">
+    <div>
+      <h1>Ofertas Exclusivas</h1>
+      <p>Aprovecha los mejores descuentos en tecnología premium por tiempo limitado</p>
+    </div>
     
-    </header>
-    <nav class="nav">
-      <ul class="nav__menu">
-        <li class="nav__item"><a href="../index.html">INICIO</a><i id="btn-close" class="fa-solid fa-xmark"></i></li>
-        <li class="nav__item"><a href="soporte.html">SOPORTE</a></li>
-        <li class="nav__item"><a href="tv.html">TV</a></li>
-        <li class="nav__item"><a href="moviles.html">MÓVILES</a></li>
-        <li class="nav__item"><a href="juegos.html">JUEGOS</a></li>
-        <li class="nav__item"><a href="componentes.html">COMPONENTES</a></li>
-        <li class="nav__item"><a href="periférico.html">PERIFERICOS</a></li>
-        <li class="nav__item"><a href="ofertas.html">OFERTAS</a></li>
-      </ul>
-      
-    </nav>
-    <h2>Ofertas limitadas</h2>
-    <!-- <hr /> -->
-    <h3>Monitores</h3>
-    <p><strong>Tiempo limitado</strong></p>
-    <div class="contenedor">
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/monitor-o.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">MONITOR 18.5" LG 19M38A-B LED 1366X768 VGA. <br></br><h4>Precio S/ 386.10</h4></p>
+    <div class="offer-timer">
+      <div class="timer-item">
+        <div class="timer-value" id="days">02</div>
+        <div class="timer-label">Días</div>
       </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/monitor-o2.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">
-          MONITOR 24" LG 24MK600M-B LED FHD 1920X1080 HDMI IPS.<h4>Precio S/ 604.50</h4>
-        </p>
+      <div class="timer-item">
+        <div class="timer-value" id="hours">18</div>
+        <div class="timer-label">Horas</div>
       </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/monitor-o3.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">
-          MONITOR 22" SAMSUNG LF22T350FHLXPE FHD LED IPS HDMI.<h4>Precio S/ 592.80</h4>
-        </p>
+      <div class="timer-item">
+        <div class="timer-value" id="minutes">45</div>
+        <div class="timer-label">Minutos</div>
       </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/monitor-o4.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">MONITOR 19.5" LG 20MK400H LED HD 1366X768 HDMI.<h4>Precio S/ 429.00</h4></p>
-      </div>
-      <div class="contenedor2">
-        <img src="../img/ofertas/monitor-o5.jpg" class="cajitas">
-        <p class="parrafo">MONITOR 27" SAMSUNG LC27T550FDLXPE FHD 75HZ 4MS VGA HDMI CURVO.<h4>Precio S/ 967.20</h4></p>
-      </div>
-      <div class="contenedor2">
-        <img src="../img/ofertas/monitor-o6.jpg" class="cajitas">
-        <p class="parrafo">MONITOR 18.5" SAMSUNG LS19A330NHLXPE LED HD HDMI VGA<h4>Precio S/ 358.80</h4></p>
+      <div class="timer-item">
+        <div class="timer-value" id="seconds">30</div>
+        <div class="timer-label">Segundos</div>
       </div>
     </div>
-    <h3>Impresoras</h3>
-    <p><strong>Tiempo limitado</strong></p>
-    <div class="contenedor">
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/impresora-o.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">
-          IMPRESORA MULTIFUNCIONAL CANON G3110 ( 2315C004AB ) WIFI.<h4>Precio S/721.50</4>
-        </p>
+  </section>
+
+  <!-- Offers Container -->
+  <div class="offers-container">
+    <!-- Monitores -->
+    <div class="category-section">
+      <h2 class="category-title">Monitores</h2>
+      <p class="category-subtitle">Tiempo limitado - Ahorra hasta 30%</p>
+      <div class="offers-grid">
+        <div class="offer-card">
+          <div class="offer-badge">-20%</div>
+          <img class="offer-image" src="../img/ofertas/monitor-o.jpg" alt="Monitor LG" />
+          <div class="offer-content">
+            <h3 class="offer-title">MONITOR 18.5" LG 19M38A-B LED 1366X768 VGA</h3>
+            <p class="offer-price">S/ 386.10</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-15%</div>
+          <img class="offer-image" src="../img/ofertas/monitor-o2.jpg" alt="Monitor LG 24" />
+          <div class="offer-content">
+            <h3 class="offer-title">MONITOR 24" LG 24MK600M-B LED FHD 1920X1080 HDMI IPS</h3>
+            <p class="offer-price">S/ 604.50</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-18%</div>
+          <img class="offer-image" src="../img/ofertas/monitor-o3.jpg" alt="Monitor Samsung" />
+          <div class="offer-content">
+            <h3 class="offer-title">MONITOR 22" SAMSUNG LF22T350FHLXPE FHD LED IPS HDMI</h3>
+            <p class="offer-price">S/ 592.80</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-25%</div>
+          <img class="offer-image" src="../img/ofertas/monitor-o4.jpg" alt="Monitor LG 19.5" />
+          <div class="offer-content">
+            <h3 class="offer-title">MONITOR 19.5" LG 20MK400H LED HD 1366X768 HDMI</h3>
+            <p class="offer-price">S/ 429.00</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-12%</div>
+          <img class="offer-image" src="../img/ofertas/monitor-o5.jpg" alt="Monitor Samsung Curvo" />
+          <div class="offer-content">
+            <h3 class="offer-title">MONITOR 27" SAMSUNG LC27T550FDLXPE FHD 75HZ 4MS VGA HDMI CURVO</h3>
+            <p class="offer-price">S/ 967.20</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-30%</div>
+          <img class="offer-image" src="../img/ofertas/monitor-o6.jpg" alt="Monitor Samsung 18.5" />
+          <div class="offer-content">
+            <h3 class="offer-title">MONITOR 18.5" SAMSUNG LS19A330NHLXPE LED HD HDMI VGA</h3>
+            <p class="offer-price">S/ 358.80</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
       </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/impresora-o2.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">IMPRESORA MULTIFUNCIONAL BROTHER DCP-T220.<h4>Precio S/ 690.30</h4></p>
-      </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/impresora-o3.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">
-          IMPRESORA MULTIFUNCIONAL HP SMART TANK 515 ( 1TJ09A ) WIFI.<h4>Precio S/ 807.30</h4>
-        </p>
-      </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/impresora-o4.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">IMPRESORA MATRICIAL EPSON LX-350 9-AGUJAS BLACK.<h4>Precio S/ 924.30</h4></p>
-      </div>
-      <div class="contenedor2">
-        <img src="../img/ofertas/impresora-o5.jpg" class="cajitas">
-        <p class="parrafo">IMPRESORA MULTIFUNCIONAL HP LASER NEVERSTOP ( 4RY26A ) 1200W WIFI/USB<h4>Precio S/ 1,209.00</h4></p>
-      </div>
-      <div class="contenedor2">
-        <img src="../img/ofertas/impresora-o6.jpg" class="cajitas">
-        <p class="parrafo">PLOTTER HP DESIGNJET T650 36-IN ( 5HB10A )<h4>Precio S/ 7,995.00</h4></p>
-      </div>
-    </div>
-    <h3>Cámaras de Seguridad</h3>
-    <p><strong>Tiempo limitado</strong></p>
-    <div class="contenedor">
-      <div class="contenedor3">
-        <img src="../img/ofertas/camara-o.jpg" class="cajitas" />
-        <p class="parrafo">
-          CAMARA WIFI EZVIZ ( CS-C1C-D0-1D2WFR ) 1080P LENTE (2.8MM).<h4>Precio S/ 210.60</h4>
-        </p>
-      </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/camara-o2.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">
-          CAMARA WIFI EZVIZ ( CS-C3A-A0-1C2WPMFBR )1080P 2MP LENTE (4MM)C/BATERIA.<h4>Precio S/ 487.50</h4>
-        </p>
-      </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/camara-o3.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">
-          CAMARA WIFI EZVIZ ( CS-CV248-A0-32WFR ) C6TC 1080P 2MP (4MM) PAN 340°.<h4>Precio S/ 288.60</h4>
-        </p>
-      </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/camara-o4.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">CAMARA IP D-LINK DCS-2310L OUTDOOR HD 1280X720.<h4>Precio S/ 994.50</h4></p>
-      </div>
-      <div class="contenedor2">
-        <img src="../img/ofertas/camara-o5.jpg " class="cajitas">
-        <p class="parrafo">CAMARA WIFI EZVIZ ( CS-CV310-A0-1B2WFR ) 1080P 2MP LENTE (2.8MM) EXTERIOR<h4>Precio S/ 312.00</h4></p>
-      </div>
-      <div class="contenedor2">
-        <img src="../img/ofertas/camara-o6.jpg" class="cajitas">
-        <p class="parrafo">CAMARA IP WI-FI D-LINK DCS-942L DIA/NOCHE MICRO-SD<h4>Precio S/ 312.00</h4></p>
-      </div>
-    </div>
-    <h3>Laptops</h3>
-    <p><strong>Tiempo limitado</strong></p>
-    <div class="contenedor">
-      <div class="contenedor2">
-        <img src="../img/ofertas/laptop-o.jpg" class="cajitas" />
-        <p class="parrafo">
-          LAPTOP I7 ASUS ( UX430UN165T ) 8550U 8GB 512GB SSD MX150 2GB 14" W10d.<h4>Precio S/ 4,676.10</h4>
-        </p>
-      </div>
-      
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/laptop-o2.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">
-          LAPTOP I3 LENOVO IDEAPAD 3 14IIL05 ( 81WD00HELM ) 1005G1 4GB 1TB 14"FREE DOS.<h4>Precio S/ 2,028.00</h4>
-        </p>
-      </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/laptop-o3.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">
-          LAPTOP I3 HP 250 G8 ( 2P5L8LT ) 1005G1 4GB 1TB 15.6" FREE DOS.<h4>Precio S/ 1,657.50</h4>
-        </p>
-      </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/laptop-o4.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">
-          LAPTOP I3 DELL INSPIRON 3501 ( 3Y3X2 ) 1115G4 8GB 256GB SSD 15.6" W10H<h4>Precio S/ 1,833.00</h4>
-        </p>
-      </div>
-    </div>
-    <h3>Teclados</h3>
-    <p><strong>Tiempo limitado</strong></p>
-    <div class="contenedor">
-      <div class="contenedor3">
-        <img
-          src="../img/ofertas/teclado-o.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">
-          TECLADO GAMING LOGITECH G513 CARBON GX BROWN (920-009322) LISHTSYNCRGB MECANICO <h4>Precio S/487.50</h4>
-        </p>
-      </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/teclado-o2.jpg"
-          class="cajita2"
-        />
-        <p class="parrafo">
-          TECLADO GAMING LOGITECH G915 TKL (920-009660) LIGHTSPEED MECHANICAL
-          WHITE RGB.<h4>Preci S/ 795.60</h4>
-        </p>
-      </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/teclado-o3.jpg"
-          class="cajita2"
-        />
-        <p class="parrafo">TECLADO GAMING LOGITECH PRO ( 920-009388 ) RGB.<h4>Precio S/ 378.30</h4></p>
-      </div>
-      <div class="contenedor2">
-        <img
-          src="../img/ofertas/teclado-o4.jpg"
-          class="cajitas"
-        />
-        <p class="parrafo">
-          TECLADO WIRELESS LOGITECH MX KEYS ( 920-009296 ) ADVANCED ILLUMINATED.<h4>Precio S/ 401.70</h4>
-        </p>
-      
-    </div>
     </div>
 
-    <footer class="footer">
-      <ul class="footer__menu">
-          <li class="footer__item"><a href="../pages/formulario.html">Contactos</a></li>
-          <li class="footer__item"><a href="#">Redes</a></li>
-          <li class="footer__item"><a href="#">Locales</a></li>
-          <li class="footer__item"><a href="#">Garantias</a></li>
-          <li class="footer__item"><a href="#">Correos</a></li>
-          <li class="footer__item"><a href="#">Preguntas Frecuentes</a></li>
-      </ul>
+    <!-- Impresoras -->
+    <div class="category-section">
+      <h2 class="category-title">Impresoras</h2>
+      <p class="category-subtitle">Tiempo limitado - Ahorra hasta 25%</p>
+      <div class="offers-grid">
+        <div class="offer-card">
+          <div class="offer-badge">-15%</div>
+          <img class="offer-image" src="../img/ofertas/impresora-o.jpg" alt="Impresora Canon" />
+          <div class="offer-content">
+            <h3 class="offer-title">IMPRESORA MULTIFUNCIONAL CANON G3110 WIFI</h3>
+            <p class="offer-price">S/ 721.50</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-20%</div>
+          <img class="offer-image" src="../img/ofertas/impresora-o2.jpg" alt="Impresora Brother" />
+          <div class="offer-content">
+            <h3 class="offer-title">IMPRESORA MULTIFUNCIONAL BROTHER DCP-T220</h3>
+            <p class="offer-price">S/ 690.30</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-18%</div>
+          <img class="offer-image" src="../img/ofertas/impresora-o3.jpg" alt="Impresora HP" />
+          <div class="offer-content">
+            <h3 class="offer-title">IMPRESORA MULTIFUNCIONAL HP SMART TANK 515 WIFI</h3>
+            <p class="offer-price">S/ 807.30</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-10%</div>
+          <img class="offer-image" src="../img/ofertas/impresora-o4.jpg" alt="Impresora Epson" />
+          <div class="offer-content">
+            <h3 class="offer-title">IMPRESORA MATRICIAL EPSON LX-350 9-AGUJAS BLACK</h3>
+            <p class="offer-price">S/ 924.30</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-22%</div>
+          <img class="offer-image" src="../img/ofertas/impresora-o5.jpg" alt="Impresora HP Laser" />
+          <div class="offer-content">
+            <h3 class="offer-title">IMPRESORA MULTIFUNCIONAL HP LASER NEVERSTOP 1200W WIFI/USB</h3>
+            <p class="offer-price">S/ 1,209.00</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-25%</div>
+          <img class="offer-image" src="../img/ofertas/impresora-o6.jpg" alt="Plotter HP" />
+          <div class="offer-content">
+            <h3 class="offer-title">PLOTTER HP DESIGNJET T650 36-IN</h3>
+            <p class="offer-price">S/ 7,995.00</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Laptops -->
+    <div class="category-section">
+      <h2 class="category-title">Laptops</h2>
+      <p class="category-subtitle">Tiempo limitado - Ahorra hasta 35%</p>
+      <div class="offers-grid">
+        <div class="offer-card">
+          <div class="offer-badge">-25%</div>
+          <img class="offer-image" src="../img/ofertas/laptop-o.jpg" alt="Laptop ASUS" />
+          <div class="offer-content">
+            <h3 class="offer-title">LAPTOP I7 ASUS UX430UN165T 8550U 8GB 512GB SSD MX150 2GB 14"</h3>
+            <p class="offer-price">S/ 4,676.10</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-30%</div>
+          <img class="offer-image" src="../img/ofertas/laptop-o2.jpg" alt="Laptop Lenovo" />
+          <div class="offer-content">
+            <h3 class="offer-title">LAPTOP I3 LENOVO IDEAPAD 3 14IIL05 1005G1 4GB 1TB 14"</h3>
+            <p class="offer-price">S/ 2,028.00</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-35%</div>
+          <img class="offer-image" src="../img/ofertas/laptop-o3.jpg" alt="Laptop HP" />
+          <div class="offer-content">
+            <h3 class="offer-title">LAPTOP I3 HP 250 G8 1005G1 4GB 1TB 15.6" FREE DOS</h3>
+            <p class="offer-price">S/ 1,657.50</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-badge">-28%</div>
+          <img class="offer-image" src="../img/ofertas/laptop-o4.jpg" alt="Laptop Dell" />
+          <div class="offer-content">
+            <h3 class="offer-title">LAPTOP I3 DELL INSPIRON 3501 1115G4 8GB 256GB SSD 15.6" W10H</h3>
+            <p class="offer-price">S/ 1,833.00</p>
+            <button class="offer-button">Ver Detalles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ul class="footer__menu">
+      <li class="footer__item"><a href="formulario.html">Contactos</a></li>
+      <li class="footer__item"><a href="#">Redes Sociales</a></li>
+      <li class="footer__item"><a href="#">Nuestros Locales</a></li>
+      <li class="footer__item"><a href="#">Garantías</a></li>
+      <li class="footer__item"><a href="#">Preguntas Frecuentes</a></li>
+    </ul>
   </footer>
+
+  <!-- Modal de Producto -->
+  <div id="product-modal" class="product-modal">
+    <div class="modal-content">
+      <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <div class="main-image">
+            <img id="modal-main-image" src="" alt="" />
+          </div>
+          <div class="thumbnail-list">
+            <div class="thumbnail active"><img src="" alt="" /></div>
+            <div class="thumbnail"><img src="" alt="" /></div>
+            <div class="thumbnail"><img src="" alt="" /></div>
+          </div>
+        </div>
+        <div class="modal-info">
+          <h2 id="modal-title" class="modal-title"></h2>
+          <p id="modal-price" class="modal-price"></p>
+          <div class="modal-description">
+            <h3>Descripción</h3>
+            <p id="modal-description-text"></p>
+          </div>
+          <div class="modal-specs">
+            <h3>Especificaciones</h3>
+            <ul id="modal-specs-list"></ul>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-add-cart">
+              <i class="fa-solid fa-cart-plus"></i>
+              Agregar al Carrito
+            </button>
+            <button class="btn-buy-now">
+              <i class="fa-solid fa-bolt"></i>
+              Comprar Ahora
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../js/script.js"></script>
-  </body>
+  <script>
+    // Countdown Timer
+    function updateTimer() {
+      const now = new Date();
+      const endDate = new Date();
+      endDate.setDate(now.getDate() + 2);
+      endDate.setHours(23, 59, 59);
+      
+      const diff = endDate - now;
+      
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+      
+      document.getElementById('days').textContent = String(days).padStart(2, '0');
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+    
+    setInterval(updateTimer, 1000);
+    updateTimer();
+  </script>
+</body>
 </html>
