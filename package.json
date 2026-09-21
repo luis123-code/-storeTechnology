@@ -1,0 +1,25 @@
+{
+  "name": "store-technology",
+  "version": "2.0.0",
+  "description": "Tienda online de productos tecnológicos premium",
+  "main": "index.html",
+  "scripts": {
+    "dev": "start index.html",
+    "start": "start index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luis123-code/-storeTechnology.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "technology",
+    "store"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luis123-code/-storeTechnology/issues"
+  },
+  "homepage": "https://github.com/luis123-code/-storeTechnology#readme"
+}

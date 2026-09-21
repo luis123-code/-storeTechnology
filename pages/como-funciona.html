@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="icon" href="../img/logo (4).ico">
+  <title>Cómo Funciona - SERVIPC</title>
+  <style>
+    .how-it-works {
+      padding: 6rem 2rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .page-header h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-header p {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .steps-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .step-card {
+      background: var(--secondary);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .step-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-1);
+      transform: scaleX(0);
+      transition: var(--transition);
+    }
+
+    .step-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .step-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background: var(--gradient-1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin: 0 auto 1.5rem;
+      color: white;
+    }
+
+    .step-icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .step-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .step-card p {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .features-section {
+      background: var(--glass);
+      border-radius: 20px;
+      padding: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    .features-section h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--text-primary);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .feature-item i {
+      font-size: 1.5rem;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .feature-item h4 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .feature-item p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .cta-section {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: var(--gradient-1);
+      border-radius: 20px;
+      margin-bottom: 4rem;
+    }
+
+    .cta-section h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .cta-section p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2.5rem;
+      background: white;
+      color: var(--accent);
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: var(--transition);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    @media (max-width: 768px) {
+      .page-header h1 {
+        font-size: 2rem;
+      }
+
+      .steps-container {
+        grid-template-columns: 1fr;
+      }
+
+      .features-section {
+        padding: 2rem;
+      }
+
+      .cta-section h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__img" src="../img/logo.jpg" alt="SERVIPC Logo" />
+      <h1 class="header__title">SERVIPC</h1>
+    </div>
+    <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <ul class="nav__menu">
+      <li class="nav__item"><a href="../index.html">INICIO</a><i id="btn-close" class="fa-solid fa-xmark"></i></li>
+      <li class="nav__item"><a href="como-funciona.html" class="active">CÓMO FUNCIONA</a></li>
+      <li class="nav__item"><a href="moviles.html">MÓVILES</a></li>
+      <li class="nav__item"><a href="tv.html">TV</a></li>
+      <li class="nav__item"><a href="juegos.html">JUEGOS</a></li>
+      <li class="nav__item"><a href="componentes.html">COMPONENTES</a></li>
+      <li class="nav__item"><a href="periférico.html">PERIFÉRICOS</a></li>
+      <li class="nav__item"><a href="ofertas.html">OFERTAS</a></li>
+      <li class="nav__item"><a href="soporte.html">SOPORTE</a></li>
+    </ul>
+  </nav>
+
+  <!-- Cómo Funciona Section -->
+  <section class="how-it-works">
+    <div class="page-header">
+      <h1>Cómo Funciona SERVIPC</h1>
+      <p>Descubre lo fácil que es comprar tecnología premium con nosotros. Tu experiencia de compra simplificada en 4 pasos.</p>
+    </div>
+
+    <div class="steps-container">
+      <div class="step-card animate-fade-in-up animate-delay-1">
+        <div class="step-number">1</div>
+        <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <h3>Explora Productos</h3>
+        <p>Navega por nuestra amplia selección de productos tecnológicos de las mejores marcas. Encuentra exactamente lo que necesitas.</p>
+      </div>
+
+      <div class="step-card animate-fade-in-up animate-delay-2">
+        <div class="step-number">2</div>
+        <div class="step-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+        <h3>Agrega al Carrito</h3>
+        <p>Selecciona tus productos favoritos y agrégalos al carrito de compras. Puedes modificar cantidades y ver el total en tiempo real.</p>
+      </div>
+
+      <div class="step-card animate-fade-in-up animate-delay-3">
+        <div class="step-number">3</div>
+        <div class="step-icon"><i class="fa-solid fa-credit-card"></i></div>
+        <h3>Procede al Pago</h3>
+        <p>Completa tu compra de forma segura con múltiples métodos de pago. Tu información está protegida con los más altos estándares.</p>
+      </div>
+
+      <div class="step-card animate-fade-in-up animate-delay-4">
+        <div class="step-number">4</div>
+        <div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <h3>Recibe tu Pedido</h3>
+        <p>Recibe tus productos en la puerta de tu casa con envío rápido y seguro. Disfruta de tu tecnología nueva.</p>
+      </div>
+    </div>
+
+    <div class="features-section">
+      <h2>¿Por qué elegirnos?</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <h4>Garantía Premium</h4>
+            <p>Todos nuestros productos cuentan con garantía extendida y soporte técnico especializado.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <h4>Envío Rápido</h4>
+            <p>Entregas en 24-48 horas en todo el país con seguimiento en tiempo real.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-headset"></i>
+          <div>
+            <h4>Soporte 24/7</h4>
+            <p>Equipo de soporte disponible las 24 horas para resolver cualquier duda.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-tags"></i>
+          <div>
+            <h4>Mejores Precios</h4>
+            <p>Garantizamos los mejores precios del mercado con ofertas exclusivas.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-rotate-left"></i>
+          <div>
+            <h4>Devoluciones Fáciles</h4>
+            <p>Política de devolución sencilla de 30 días sin preguntas.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-certificate"></i>
+          <div>
+            <h4>Productos Certificados</h4>
+            <p>Solo vendemos productos originales y certificados por fabricantes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <h2>¿Listo para comenzar?</h2>
+      <p>Únete a miles de clientes satisfechos y descubre la mejor experiencia de compra tecnológica.</p>
+      <a href="../index.html#productos" class="cta-button">
+        <i class="fa-solid fa-shopping-bag"></i>
+        Ver Productos
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ul class="footer__menu">
+      <li class="footer__item"><a href="formulario.html">Contactos</a></li>
+      <li class="footer__item"><a href="#">Redes Sociales</a></li>
+      <li class="footer__item"><a href="#">Nuestros Locales</a></li>
+      <li class="footer__item"><a href="#">Garantías</a></li>
+      <li class="footer__item"><a href="#">Preguntas Frecuentes</a></li>
+    </ul>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
